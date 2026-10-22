@@ -8,6 +8,7 @@ import model.Koleksi;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Comparator;
 
 /**
  *
@@ -34,5 +35,9 @@ public class KatalogPerpustakaan {
             System.out.println("   Layak pinjam : " + (k.layakDipinjam() ? "Ya" : "Tidak"));
             System.out.println("   Lokasi       : " + k.infoLokasi());
         }
+    }
+    
+    public void urut(Comparator<? super Koleksi> pembanding) {
+        daftar.sort(pembanding);
     }
 }
