@@ -26,6 +26,10 @@ public abstract class Koleksi {
                 + " \"" + judul + " \" (" + tahunTerbit + ")";
     }
     
+    public String infoLokasi(){
+        return "Tidak ada lokasi fisik";
+    }
+    
     public String getKodeKoleksi() {
         return kodeKoleksi;
     }
