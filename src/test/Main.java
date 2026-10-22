@@ -3,6 +3,8 @@ import model.BerkasDigital;
 import model.BukuCetak;
 import model.Majalah;
 import eksepsi.PustakaException;
+import layanan.EksporKatalog;
+import java.io.IOException;
 
 public class Main {
 
@@ -43,6 +45,14 @@ public class Main {
             } catch (PustakaException e) {
                 System.out.println("Gagal: " + e.getMessage());
             }
+        }
+        
+        System.out.println("\n=== EKSPOR KATALOG ===");
+        try {
+            new EksporKatalog().ekspor(katalog.getDaftar(), "katalog.txt");
+            System.out.println("Katalog berhasil ditulis ke katalog.txt");
+        } catch (IOException e) {
+            System.out.println("Gagal menulis berkas: " + e.getMessage());
         }
     }
 }

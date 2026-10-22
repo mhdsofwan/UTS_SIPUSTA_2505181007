@@ -1,0 +1,8 @@
+Kode    Jenis          Judul                      Tahun  Layak Pinjam  Lokasi                
+---------------------------------------------------------------------------------------------
+BK-002  BukuCetak      Basis Data Relasional      2021   Tidak         Tidak ada lokasi fisik
+MJ-002  Majalah        Info Teknologi Edisi 87    2026   Ya            Tidak ada lokasi fisik
+MJ-001  Majalah        Info Teknologi Edisi 88    2026   Tidak         Tidak ada lokasi fisik
+BK-001  BukuCetak      Java How to Program        2022   Ya            Tidak ada lokasi fisik
+BD-002  BerkasDigital  Jurnal Rekayasa Perangkat  2025   Ya            Tidak ada lokasi fisik
+BD-001  BerkasDigital  Panduan Pemrograman Java   2024   Ya            Tidak ada lokasi fisik
