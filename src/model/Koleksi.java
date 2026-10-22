@@ -30,6 +30,7 @@ public abstract class Koleksi {
         return "Tidak ada lokasi fisik";
     }
     
+    
     public String getKodeKoleksi() {
         return kodeKoleksi;
     }

@@ -2,6 +2,7 @@ import layanan.*;
 import model.BerkasDigital;
 import model.BukuCetak;
 import model.Majalah;
+import eksepsi.PustakaException;
 
 public class Main {
 
@@ -25,6 +26,23 @@ public class Main {
         System.out.println("\n=== JUDUL SAJA ===");
         katalog.urut((a, b) -> a.getJudul().compareToIgnoreCase(b.getJudul()));
         katalog.getDaftar().forEach(k -> System.out.println(k.getJudul()));
+        
+        System.out.println("\n=== UJI PINJAM ===");
+        String[] percobaan = {
+            "BK-001", 
+            "BK-001",   
+            "BK-002",   
+            "MJ-001",   
+            "BD-001",   
+            "XX-999"  
+        };
 
+        for (String kode : percobaan) {
+            try {
+                katalog.pinjam(kode);
+            } catch (PustakaException e) {
+                System.out.println("Gagal: " + e.getMessage());
+            }
+        }
     }
 }
