@@ -38,9 +38,15 @@ public class Majalah extends Koleksi implements Terarsip{
     }
     
     @Override
+    public String infoLokasi() {
+        return ringkasanArsip();   // default method dari interface Terarsip
+    }
+    
+    @Override
     public String nomorRak() {
         return nomorRak;
     }
+    
     
     @Override
     public int lokasiLantai() {

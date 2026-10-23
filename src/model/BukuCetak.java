@@ -35,6 +35,11 @@ public class BukuCetak extends Koleksi implements Terarsip {
     }
     
     @Override
+    public String infoLokasi() {
+        return ringkasanArsip();
+    }
+    
+    @Override
     public String nomorRak() {
         return nomorRak;
     }
